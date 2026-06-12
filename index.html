@@ -1,214 +1,492 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Your Name | Virtual Assistant Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="css/styles.css"/>
+<html lang="en"><head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.13/html-to-image.min.js" integrity="sha512-iZ2ORl595Wx6miw+GuadDet4WQbdSWS3JLMoNfY8cRGoEFy6oT3G9IbcrBeL6AfkgpA51ETt/faX6yLV+/gFJg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yang Montesa | Yang Virtual Solutions</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="artifacts-component-root-html">
 
 <nav>
-  <a class="nav-logo" href="#hero">Your<span>Name</span></a>
+  <a class="nav-logo" href="#hero">Yang<span>VS</span><small>Virtual Solutions</small></a>
   <ul class="nav-links">
-    <li><a href="#about">About</a></li>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#tools">Tools</a></li>
     <li><a href="#services">Services</a></li>
-    <li><a href="#portfolio">Portfolio</a></li>
-    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#portfolio">Sample Works</a></li>
+    <li><a href="#process">Getting Started</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
     <li><a href="#contact" class="nav-cta">Hire Me</a></li>
   </ul>
 </nav>
 
+<!-- ══ HERO ══ -->
 <section id="hero">
-  <div class="hero-c">
-    <div class="hero-badge">✦ Open to New Clients</div>
-    <h1>Hi, I'm<br><span>[Your Name]</span></h1>
-    <p class="hero-sub">Virtual Assistant · Website &amp; Course Creator</p>
-    <p class="hero-desc">I help coaches, course creators, and online business owners build their digital presence — from polished websites and structured courses, to organized books and scroll-stopping social content.</p>
-    <div class="hero-btns">
-      <a href="#portfolio" class="btn btn-p">View My Work</a>
-      <a href="#contact" class="btn btn-o">Let's Connect</a>
+  <div class="hero-inner">
+    <div class="hero-c">
+      <div class="hero-badge">✦ Available Full-time and Part-time</div>
+      <h1>Hi, I'm<br><span>Yang Montesa</span></h1>
+      <p class="hero-title">Website and Course Creator Specialist</p>
+      <p class="hero-niches">Bookkeeper &nbsp;·&nbsp; Social Media Manager</p>
+      <p class="hero-desc">I help coaches and online business owners build professional websites, launch structured online courses, and keep their digital presence running smoothly. Whether you need a course built from the ground up, a website that converts, organized books, or consistent social media content — I bring the right skills, the right tools, and a genuine commitment to delivering results you can be proud of.</p>
+      <div class="hero-btns">
+        <a href="#portfolio" class="btn btn-p">View My Work</a>
+        <a href="https://calendly.com/yang-virtualsolutions/30?back=1&amp;month=2026-06" target="_blank" class="btn btn-o">Let's Connect</a>
+      </div>
+      <div class="hero-stats">
+        <div><span class="snum">9 months</span><span class="slbl">VA Experience</span></div>
+        <div><span class="snum">10 clients</span><span class="slbl">Clients Served</span></div>
+        <div><span class="snum">3 niches</span><span class="slbl">Service Niches</span></div>
+      </div>
     </div>
-    <div class="hero-stats">
-      <div><span class="snum">20+</span><span class="slbl">Projects Done</span></div>
-      <div><span class="snum">3</span><span class="slbl">Niches Served</span></div>
-      <div><span class="snum">100%</span><span class="slbl">Remote Ready</span></div>
-    </div>
-  </div>
-</section>
+    
+</div></section>
 
+<!-- ══ ABOUT ══ -->
 <section id="about">
   <div class="about-g">
-    <div style="position:relative">
-      <div class="img-ph">&#128105;&#8205;&#128187;<p>Your Photo Here</p>
-        <div class="acc"><span>2+</span>Years as VA</div>
+    <div class="about-img-col">
+      <div class="about-photo">
+        <img id="aboutPhoto" alt="Yang Montesa">
+        <div class="about-photo-ph" id="aboutPlaceholder">
+          <div class="initials">YM</div>
+          <p>Yang Montesa</p>
+        </div>
+      </div>
+      <div class="about-name-badge">
+        <strong>Yang Montesa</strong>
+        <small>From Idea to Launch —Your Website &amp; Course Creation Partner</small>
       </div>
     </div>
-    <div class="about-b">
+    <div class="about-body">
       <span class="stag">About Me</span>
-      <h2 class="stitle">The person<br>behind the work</h2>
-      <div class="cnote">&#128221; Caption Guide: Write 2–3 sentences about who you are and your background. Mention your personality, work ethic, and why clients love working with you.</div>
-      <p>I'm [Your Name], a detail-oriented Virtual Assistant based in [Your Location]. I specialize in helping online entrepreneurs get their digital tools in order — so they can focus on what they do best.</p>
-      <p>My background in [e.g., admin, content creation, or accounting] gives me a strong foundation across the services I offer. I bring a proactive mindset, clear communication, and a genuine interest in seeing my clients succeed.</p>
-      <p>Whether you need a polished website, a course built from scratch, tidy books, or a consistent social media presence — I've got you covered.</p>
-      <div class="tools">
-        <span class="ttag">WordPress</span><span class="ttag">Elementor</span><span class="ttag">Kajabi</span><span class="ttag">Teachable</span><span class="ttag">Thinkific</span><span class="ttag">Canva</span><span class="ttag">QuickBooks</span><span class="ttag">Xero</span><span class="ttag">Wave</span><span class="ttag">Meta Business Suite</span><span class="ttag">Later</span><span class="ttag">Buffer</span><span class="ttag">Notion</span><span class="ttag">ClickUp</span><span class="ttag">Google Suite</span>
+      <h2 class="stitle" id="accountanth2">The Accountant Who Became a VA On Purpose</h2>
+      <div class="accent-bar"></div>
+      <p>Before stepping into the world of virtual assistance, I spent four and a half years as a Multi-Country Tax Accountant, supporting clients across Australia, New Zealand, Singapore, and the Philippines. My background spans corporate and personal tax compliance, bookkeeping, financial reporting, and the behind-the-scenes systems that keep businesses running smoothly. In simple terms, I built a career around accuracy, organization, and solving problems before they became bigger ones.</p>
+      <p>My move into virtual assistance wasn't a sudden career change — it was a deliberate decision. I wanted to expand my skill set, explore the growing digital space, and build a career that offered both professional growth and greater flexibility to be present for the people who matter most to me.</p>
+      <p>So before I ever worked with a client, I became one of my own. I invested months learning website design, course creation platforms, social media management, and the tools that modern online businesses rely on. I built projects, practiced workflows, and created my portfolio through hands-on experience, not because a client required it, but because I believed preparation comes before opportunity.</p>
+      <p>Today, I help entrepreneurs, coaches, and business owners bring their ideas online through website and course creation, while also offering bookkeeping and social media support. Although I'm relatively new to the virtual assistance industry, I bring something that can't be learned from a course alone: years of professional discipline, accountability, and attention to detail developed in a corporate environment.</p>
+      <p>My philosophy is simple: learn the tools, understand the process, and deliver work I can stand behind. No shortcuts, no overpromising, just reliable support that helps businesses grow.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TOOLS MARQUEE ══ -->
+<section id="tools" style="padding:0">
+  <div style="background:var(--n2);padding:60px 0">
+    <div class="tools-header">
+      <p>Tools and Platforms I Work With</p>
+    </div>
+    <div class="marquee-outer">
+      <div class="marquee-track" id="marqueeTrack">
+        <!-- First set -->
+        <div class="tool-badge"><div class="tool-icon" style="background:#FF6B35">K</div><span class="tool-name">Kajabi</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#3B82F6">T</div><span class="tool-name">Thinkific</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#17B978">T</div><span class="tool-name">Teachable</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#21759B">W</div><span class="tool-name">WordPress</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#FAAD4F;color:#333">W</div><span class="tool-name">Wix</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#00C4CC">C</div><span class="tool-name">Canva</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#2CA01C">QB</div><span class="tool-name">QuickBooks</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#1C5FA8">W</div><span class="tool-name">Wave</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#6366F1">L</div><span class="tool-name">Later</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#168EEA">B</div><span class="tool-name">Buffer</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#2F2F2F">N</div><span class="tool-name">Notion</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#7B68EE">CU</div><span class="tool-name">ClickUp</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#E07035">G</div><span class="tool-name">GHL</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#4A90D9">Z</div><span class="tool-name">Zapier</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#FF6B6B">M</div><span class="tool-name">Mailchimp</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#22c55e">CK</div><span class="tool-name">ConvertKit</span></div>
+        <!-- Duplicate for seamless loop -->
+        <div class="tool-badge"><div class="tool-icon" style="background:#FF6B35">K</div><span class="tool-name">Kajabi</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#3B82F6">T</div><span class="tool-name">Thinkific</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#17B978">T</div><span class="tool-name">Teachable</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#21759B">W</div><span class="tool-name">WordPress</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#FAAD4F;color:#333">W</div><span class="tool-name">Wix</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#00C4CC">C</div><span class="tool-name">Canva</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#2CA01C">QB</div><span class="tool-name">QuickBooks</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#1C5FA8">W</div><span class="tool-name">Wave</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#6366F1">L</div><span class="tool-name">Later</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#168EEA">B</div><span class="tool-name">Buffer</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#2F2F2F">N</div><span class="tool-name">Notion</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#7B68EE">CU</div><span class="tool-name">ClickUp</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#E07035">G</div><span class="tool-name">GHL</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#4A90D9">Z</div><span class="tool-name">Zapier</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#FF6B6B">M</div><span class="tool-name">Mailchimp</span></div>
+        <div class="tool-badge"><div class="tool-icon" style="background:#22c55e">CK</div><span class="tool-name">ConvertKit</span></div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ══ SERVICES ══ -->
 <section id="services">
   <span class="stag">What I Offer</span>
-  <h2 class="stitle">Services Built Around<br>Your Business</h2>
-  <p class="ssub">From building your digital home to keeping your finances clean and your social media active — here's how I can support your business.</p>
+  <h2 class="stitle">Services Built Around<br>Your Online Business</h2>
+  <p class="ssub">From building your course and website to organizing your finances and growing your social media presence — here is how I can support your business across three focused areas of expertise.</p>
   <div class="svc-g">
     <div class="svc main">
-      <div class="svc-icon">&#127760;</div>
-      <span class="sbadge">&#11088; Main Niche</span>
-      <h3>Website &amp; Course Creation VA</h3>
-      <p>I build and maintain professional websites and online course platforms designed to convert visitors into students and clients.</p>
+      <div class="svc-icon">🌐</div>
+      <span class="sbadge">⭐ Main Niche</span>
+      <h3>Website and Course Creation VA</h3>
+      <p>I help coaches and digital educators build professional websites and fully structured online courses from concept to launch. I invest time in mastering every platform before offering it, so you get reliable, quality delivery every time.</p>
       <ul>
-        <li>Website setup &amp; design (WordPress, Wix, Squarespace)</li>
-        <li>Sales &amp; landing page creation</li>
+        <li>Website setup and design (Wix, Squarespace, WordPress)</li>
+        <li>Sales and landing page creation</li>
         <li>Course platform setup (Kajabi, Teachable, Thinkific)</li>
-        <li>Module structuring &amp; content upload</li>
-        <li>Course graphic design &amp; worksheets</li>
-        <li>Website audits &amp; troubleshooting</li>
-        <li>Plugin setup &amp; site maintenance</li>
+        <li>Module structuring, content upload, and organization</li>
+        <li>Course graphic design, slide decks, and worksheets</li>
+        <li>Website audits, plugin setup, and maintenance</li>
+        <li>Email sequences for course launches</li>
       </ul>
     </div>
     <div class="svc side">
-      <div class="svc-icon">&#128202;</div>
+      <div class="svc-icon">📊</div>
       <span class="sbadge">Side Niche</span>
       <h3>Bookkeeping VA</h3>
-      <p>I keep your financial records accurate and organized so you always know where your business stands — without the overwhelm.</p>
+      <p>With a solid background in corporate accounting, I bring more than basic data entry to your books. I handle the financial groundwork that keeps your records accurate, reconciled, and ready for your accountant at any time.</p>
       <ul>
-        <li>Data entry &amp; categorization</li>
-        <li>Invoice &amp; billing management</li>
-        <li>Monthly financial reports</li>
-        <li>Bank &amp; credit card reconciliation</li>
-        <li>Expense tracking &amp; monitoring</li>
-        <li>QuickBooks / Xero / Wave support</li>
+        <li>Journal entries and ledger posting</li>
+        <li>Bank and credit card reconciliation</li>
+        <li>Accounts receivable aging and accounts payable analysis</li>
+        <li>Invoice management and collections follow-up</li>
+        <li>Vendor payment processing and tracking</li>
+        <li>Profit and Loss, Balance Sheet, and Trial Balance support</li>
+        <li>QuickBooks, Xero, and Wave</li>
       </ul>
     </div>
     <div class="svc side">
-      <div class="svc-icon">&#128241;</div>
+      <div class="svc-icon">📱</div>
       <span class="sbadge">Side Niche</span>
       <h3>Social Media Manager</h3>
-      <p>I create, schedule, and manage your social media presence — keeping your brand consistent and your audience engaged.</p>
+      <p>I help online businesses maintain a consistent and engaging social media presence. From content planning to post scheduling and performance reporting, I handle the strategy and execution so you can stay focused on your work.</p>
       <ul>
-        <li>Content planning &amp; calendar creation</li>
-        <li>Graphic design (posts, reels, stories)</li>
-        <li>Caption writing &amp; hashtag research</li>
-        <li>Post scheduling (Later, Buffer, Meta)</li>
-        <li>Community engagement management</li>
-        <li>Monthly analytics reporting</li>
+        <li>Content planning and calendar creation</li>
+        <li>Graphic design for posts, reels, and stories</li>
+        <li>Caption writing and hashtag research</li>
+        <li>Post scheduling using Later, Buffer, and Meta</li>
+        <li>Community engagement and management</li>
+        <li>Monthly analytics and performance reporting</li>
       </ul>
+    </div>
+  </div>
+  <div class="addl">
+    <span class="addl-lbl">✨ Also Available</span>
+    <div class="addl-tags">
+      <span class="addl-tag">Email and Calendar Management</span>
+      <span class="addl-tag">Email Marketing</span>
+      <span class="addl-tag">AI Automation</span>
+      <span class="addl-tag">Podcast Editing</span>
+      <span class="addl-tag">Lead Generation</span>
+      <span class="addl-tag">Content and Graphics Creation</span>
+      <span class="addl-tag">Photo and Video Editing</span>
     </div>
   </div>
 </section>
 
+<!-- ══ PORTFOLIO ══ -->
 <section id="portfolio">
   <span class="stag">My Work</span>
   <h2 class="stitle">Sample Works</h2>
-  <p class="ssub">A curated showcase across all three of my niches. Use the toggles below to show or hide sections based on what's relevant to each application.</p>
+  <p class="ssub">A hands-on showcase across all three niches; built through real practice, training, and client projects. Use the toggles below to show or hide each niche as needed.</p>
   <div class="port-ctrl">
-    <span class="ctrl-lbl">&#128065; Show/Hide Niche:</span>
+    <span class="ctrl-lbl">👁 Show / Hide Niche:</span>
     <div class="tog-g">
-      <div class="pill on" onclick="tog('web',this)"><span class="pdot"></span>Website &amp; Course Creation</div>
+      <div class="pill on" onclick="tog('web',this)"><span class="pdot"></span>Website and Course Creation</div>
       <div class="pill on" onclick="tog('bk',this)"><span class="pdot"></span>Bookkeeping</div>
-      <div class="pill on" onclick="tog('smm',this)"><span class="pdot"></span>Social Media</div>
+      <div class="pill on" onclick="tog('smm',this)"><span class="pdot"></span>Social Media Management</div>
     </div>
   </div>
+
   <div class="psec" id="sec-web">
-    <div class="psec-hd"><h3>&#127760; Website &amp; Course Creation</h3><span class="ptag">Main Niche</span></div>
+    <div class="psec-hd"><h3>🌐 Website and Course Creation</h3><span class="ptag">Main Niche</span></div>
     <div class="pgrid">
-      <div class="wcard"><div class="wprev"><div class="mweb"><div class="mbar"><div class="md" style="background:#ff5f57"></div><div class="md" style="background:#febc2e"></div><div class="md" style="background:#28c840"></div></div><div class="mcont"><div class="mnav"></div><div class="mhero"><div class="mhtext"></div></div><div class="mcols"><div class="mcol"></div><div class="mcol"></div><div class="mcol"></div></div></div></div></div><div class="winfo"><p class="wtitle">Coaching Business Website</p><p class="wdesc">Built a 5-page WordPress site for a life coach — home, about, services, blog, and contact page with a lead capture form and mobile optimization.</p><div class="wtags"><span class="wtag">WordPress</span><span class="wtag">Elementor</span><span class="wtag">Canva</span></div></div></div>
-      <div class="wcard"><div class="wprev"><div class="mcourse"><div class="mch"><div class="mct"></div></div><div class="mcb"><div class="msb"><div class="mls on"></div><div class="mls"></div><div class="mls"></div><div class="mls"></div><div class="mls"></div></div><div class="mva">&#9654;</div></div></div></div><div class="winfo"><p class="wtitle">Online Course Setup — Kajabi</p><p class="wdesc">Structured and uploaded a 6-module course on Kajabi including video lessons, downloadable worksheets, and automated email sequences for new students.</p><div class="wtags"><span class="wtag">Kajabi</span><span class="wtag">Canva</span><span class="wtag">Notion</span></div></div></div>
-      <div class="wcard"><div class="wprev" style="background:var(--p1l);display:flex;align-items:center;justify-content:center;"><div style="background:white;border-radius:10px;padding:.9rem;width:78%;box-shadow:0 2px 12px rgba(0,0,0,.08);"><div style="font-size:.68rem;font-weight:700;color:var(--p1);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.5rem">&#128269; Website Audit Report</div><div style="display:flex;flex-direction:column;gap:5px"><div style="display:flex;justify-content:space-between;align-items:center;font-size:.65rem;color:var(--muted)"><span>Page Speed</span><span style="color:#22c55e;font-weight:700">&#10003; 94</span></div><div style="height:4px;background:#e0e0e0;border-radius:2px;overflow:hidden"><div style="width:94%;height:100%;background:#22c55e"></div></div><div style="display:flex;justify-content:space-between;align-items:center;font-size:.65rem;color:var(--muted)"><span>SEO Score</span><span style="color:var(--p2);font-weight:700">&#9888; 71</span></div><div style="height:4px;background:#e0e0e0;border-radius:2px;overflow:hidden"><div style="width:71%;height:100%;background:var(--p2)"></div></div><div style="display:flex;justify-content:space-between;align-items:center;font-size:.65rem;color:var(--muted)"><span>Mobile UX</span><span style="color:#22c55e;font-weight:700">&#10003; 88</span></div><div style="height:4px;background:#e0e0e0;border-radius:2px;overflow:hidden"><div style="width:88%;height:100%;background:#22c55e"></div></div></div></div></div><div class="winfo"><p class="wtitle">Website Audit &amp; Action Plan</p><p class="wdesc">Conducted a full audit for a small business — identifying UX issues, broken links, SEO gaps, and delivering a prioritized action plan report.</p><div class="wtags"><span class="wtag">SEMrush</span><span class="wtag">Google Search Console</span><span class="wtag">Notion</span></div></div></div>
-      <div class="wcard"><div class="wprev"><div class="mcourse" style="background:#1e1035;"><div class="mch" style="background:#7c3aed;"><div class="mct"></div></div><div class="mcb"><div class="msb" style="width:100%"><div style="height:7px;background:rgba(255,255,255,.65);border-radius:2px;width:55%;margin-bottom:5px"></div><div class="mls" style="background:rgba(124,58,237,.4)"></div><div class="mls"></div><div class="mls"></div><div style="height:18px;background:#7c3aed;border-radius:4px;margin-top:6px;opacity:.7;display:flex;align-items:center;justify-content:center;font-size:.6rem;color:white">Enroll Now</div></div></div></div></div><div class="winfo"><p class="wtitle">Course Sales Page — Teachable</p><p class="wdesc">Designed a high-converting course sales page on Teachable for a digital marketing coach, with testimonials section, module preview, and pricing table.</p><div class="wtags"><span class="wtag">Teachable</span><span class="wtag">Canva</span><span class="wtag">Copywriting</span></div></div></div>
+      <div class="wcard"><div class="wprev"><div class="mweb"><div class="mbar"><div class="md" style="background:#ff5f57"></div><div class="md" style="background:#febc2e"></div><div class="md" style="background:#28c840"></div></div><div class="mcont"><div class="mnav"></div><div class="mhero"><div class="mhtext"></div></div><div class="mcols"><div class="mcol"></div><div class="mcol"></div><div class="mcol"></div></div></div></div></div><div class="winfo"><p class="wtitle">Coaching Business Website</p><p class="wdesc">Built a five-page website for a life coach — home, about, services, blog, and contact page with a lead capture form, mobile optimization, and on-brand visual design.</p><div class="wtags"><span class="wtag">Wix</span><span class="wtag">Canva</span></div></div></div>
+      <div class="wcard"><div class="wprev"><div class="mcourse"><div class="mch"><div class="mct"></div></div><div class="mcb"><div class="msb"><div class="mls on"></div><div class="mls"></div><div class="mls"></div><div class="mls"></div><div class="mls"></div></div><div class="mva">▶</div></div></div></div><div class="winfo"><p class="wtitle">Online Course Setup — Kajabi</p><p class="wdesc">Structured and uploaded a six-module course on Kajabi, including video lessons, downloadable worksheets, module quizzes, and automated welcome and progress email sequences.</p><div class="wtags"><span class="wtag">Kajabi</span><span class="wtag">Canva</span><span class="wtag">Notion</span></div></div></div>
+      <div class="wcard"><div class="wprev" style="background:var(--p1l);display:flex;align-items:center;justify-content:center;"><div style="background:white;border-radius:10px;padding:1rem;width:82%;box-shadow:0 2px 12px rgba(0,0,0,.08);"><div style="font-size:.68rem;font-weight:700;color:var(--p1);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.6rem">🔍 Website Audit Report</div><div style="display:flex;flex-direction:column;gap:7px"><div style="display:flex;justify-content:space-between;align-items:center;font-size:.65rem;color:var(--muted)"><span>Page Speed</span><span style="color:var(--green);font-weight:700">✓ 94</span></div><div style="height:4px;background:#e0e0e0;border-radius:2px;overflow:hidden"><div style="width:94%;height:100%;background:var(--green)"></div></div><div style="display:flex;justify-content:space-between;align-items:center;font-size:.65rem;color:var(--muted)"><span>SEO Score</span><span style="color:var(--p2);font-weight:700">⚠ 71</span></div><div style="height:4px;background:#e0e0e0;border-radius:2px;overflow:hidden"><div style="width:71%;height:100%;background:var(--p2)"></div></div><div style="display:flex;justify-content:space-between;align-items:center;font-size:.65rem;color:var(--muted)"><span>Mobile UX</span><span style="color:var(--green);font-weight:700">✓ 88</span></div><div style="height:4px;background:#e0e0e0;border-radius:2px;overflow:hidden"><div style="width:88%;height:100%;background:var(--green)"></div></div></div></div></div><div class="winfo"><p class="wtitle">Website Audit and Action Plan</p><p class="wdesc">Full site audit covering UX issues, broken links, and SEO gaps — delivered as a prioritized action plan report with clear, actionable recommendations for the client.</p><div class="wtags"><span class="wtag">SEMrush</span><span class="wtag">Google Search Console</span></div></div></div>
+      <div class="wcard"><div class="wprev"><div class="mcourse" style="background:#1e1035;"><div class="mch" style="background:#7c3aed;"><div class="mct"></div></div><div class="mcb"><div class="msb" style="width:100%"><div style="height:7px;background:rgba(255,255,255,.65);border-radius:2px;width:55%;margin-bottom:6px"></div><div class="mls" style="background:rgba(124,58,237,.4)"></div><div class="mls"></div><div class="mls"></div><div style="height:18px;background:#7c3aed;border-radius:4px;margin-top:8px;opacity:.8;display:flex;align-items:center;justify-content:center;font-size:.6rem;color:white">Enroll Now · $297</div></div></div></div></div><div class="winfo"><p class="wtitle">Course Sales Page — Teachable</p><p class="wdesc">High-converting course sales page for a digital marketing coach — testimonials section, module preview, instructor bio, frequently asked questions, and tiered pricing table.</p><div class="wtags"><span class="wtag">Teachable</span><span class="wtag">Canva</span><span class="wtag">Copywriting</span></div></div></div>
+      <div class="wcard"><div class="wprev" style="background:#1a1a2e;display:flex;align-items:center;justify-content:center;padding:1rem;"><div style="width:85%;background:rgba(255,255,255,.06);border-radius:10px;padding:1rem;border:1px solid rgba(255,255,255,.1);"><div style="font-size:.65rem;font-weight:700;color:var(--p2);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.8rem">📧 Launch Email Sequence</div><div style="display:flex;flex-direction:column;gap:6px"><div style="display:flex;align-items:center;gap:.5rem;font-size:.62rem;color:rgba(255,255,255,.7)"><div style="width:20px;height:20px;background:var(--p1);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.5rem;flex-shrink:0">1</div>Welcome and What to Expect</div><div style="display:flex;align-items:center;gap:.5rem;font-size:.62rem;color:rgba(255,255,255,.7)"><div style="width:20px;height:20px;background:var(--p1);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.5rem;flex-shrink:0">2</div>Module 1 Released</div><div style="display:flex;align-items:center;gap:.5rem;font-size:.62rem;color:rgba(255,255,255,.7)"><div style="width:20px;height:20px;background:var(--p2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.5rem;flex-shrink:0">3</div>Midway Check-in and Tip</div><div style="display:flex;align-items:center;gap:.5rem;font-size:.62rem;color:rgba(255,255,255,.7)"><div style="width:20px;height:20px;background:var(--orange);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.5rem;flex-shrink:0">4</div>Completion and Upsell</div></div></div></div><div class="winfo"><p class="wtitle">Course Launch Email Sequence</p><p class="wdesc">Set up and wrote a six-email automated launch sequence on ConvertKit — covering pre-launch, enrollment, onboarding, a midway check-in, and a post-course upsell offer.</p><div class="wtags"><span class="wtag">ConvertKit</span><span class="wtag">Email Copywriting</span><span class="wtag">Automation</span></div></div></div>
+      <div class="wcard"><div class="wprev" style="background:#f8f4ef;display:flex;align-items:center;justify-content:center;"><div style="width:80%;background:white;border-radius:10px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.08);"><div style="background:var(--p1);height:32px;display:flex;align-items:center;padding:0 .9rem;"><div style="height:7px;width:110px;background:rgba(255,255,255,.6);border-radius:2px;"></div></div><div style="padding:.8rem .9rem;"><div style="height:32px;background:linear-gradient(90deg,var(--p1l),var(--p2l));border-radius:4px;margin-bottom:.6rem;display:flex;align-items:center;justify-content:center;"><div style="height:6px;width:60%;background:var(--p1);border-radius:2px;opacity:.5;"></div></div><div style="display:flex;flex-direction:column;gap:4px;margin-bottom:.6rem"><div style="height:5px;background:#e0e0e0;border-radius:2px;"></div><div style="height:5px;background:#e0e0e0;border-radius:2px;width:80%;"></div></div><div style="background:var(--p2);height:20px;border-radius:50px;width:65%;margin:0 auto;display:flex;align-items:center;justify-content:center;"><div style="height:5px;width:50%;background:rgba(255,255,255,.7);border-radius:2px;"></div></div></div></div></div><div class="winfo"><p class="wtitle">Lead Magnet Landing Page</p><p class="wdesc">Designed a focused lead magnet landing page with a free guide offer, email opt-in form, and thank-you redirect — integrated with Mailchimp to automate list-building for a course creator.</p><div class="wtags"><span class="wtag">Squarespace</span><span class="wtag">Mailchimp</span><span class="wtag">Canva</span></div></div></div>
     </div>
   </div>
+
   <div class="psec" id="sec-bk">
-    <div class="psec-hd"><h3>&#128202; Bookkeeping</h3><span class="ptag">Side Niche</span></div>
+    <div class="psec-hd"><h3>📊 Bookkeeping</h3><span class="ptag">Side Niche · Corporate Accounting Background</span></div>
     <div class="pgrid">
-      <div class="wcard"><div class="wprev"><div class="msheet"><div class="msh"><div class="msht"></div></div><div class="mtable"><div class="mrow hdr"><div class="mcell"><div class="mbar2 hl"></div></div><div class="mcell"><div class="mbar2 hl"></div></div><div class="mcell"><div class="mbar2 hl"></div></div></div><div class="mrow"><div class="mcell"><div class="mbar2"></div></div><div class="mcell"><div class="mbar2"></div></div><div class="mcell"><div class="mbar2 am"></div></div></div><div class="mrow"><div class="mcell"><div class="mbar2"></div></div><div class="mcell"><div class="mbar2"></div></div><div class="mcell"><div class="mbar2"></div></div></div><div class="mrow"><div class="mcell"><div class="mbar2"></div></div><div class="mcell"><div class="mbar2"></div></div><div class="mcell"><div class="mbar2 am"></div></div></div><div class="mrow hdr"><div class="mcell"><div class="mbar2 hl"></div></div><div class="mcell"><div class="mbar2"></div></div><div class="mcell"><div class="mbar2 hl"></div></div></div></div></div></div><div class="winfo"><p class="wtitle">Monthly Profit &amp; Loss Report</p><p class="wdesc">Prepared a clean 3-month P&amp;L report for a freelance photographer tracking income streams, expenses by category, and net profit trends.</p><div class="wtags"><span class="wtag">Google Sheets</span><span class="wtag">QuickBooks</span></div></div></div>
-      <div class="wcard"><div class="wprev" style="background:var(--p1l);display:flex;align-items:center;justify-content:center;"><div style="background:white;border-radius:10px;padding:1rem;width:82%;box-shadow:0 2px 10px rgba(0,0,0,.08);"><div style="font-size:.68rem;font-weight:700;color:var(--p1);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.5rem">Bank Reconciliation</div><div style="display:flex;flex-direction:column;gap:5px"><div style="display:flex;justify-content:space-between;font-size:.65rem;color:var(--muted)"><span>Book Balance</span><span style="font-weight:700;color:var(--n2)">$12,450.00</span></div><div style="display:flex;justify-content:space-between;font-size:.65rem;color:var(--muted)"><span>Bank Statement</span><span style="font-weight:700;color:var(--n2)">$12,450.00</span></div><div style="height:1px;background:var(--border);margin:.3rem 0"></div><div style="display:flex;justify-content:space-between;font-size:.68rem"><span style="color:var(--muted)">Difference</span><span style="font-weight:700;color:#16a34a">$0.00 &#10003;</span></div></div></div></div><div class="winfo"><p class="wtitle">Bank Reconciliation Report</p><p class="wdesc">Performed a complete monthly bank reconciliation for a service-based business — identifying and resolving discrepancies across 4 accounts.</p><div class="wtags"><span class="wtag">QuickBooks Online</span><span class="wtag">Excel</span></div></div></div>
-      <div class="wcard"><div class="wprev"><div class="msheet" style="background:#f0fdf4"><div class="msh" style="background:#166534"><div class="msht"></div></div><div class="mtable"><div class="mrow hdr"><div class="mcell"><div class="mbar2" style="background:#16a34a;opacity:.35"></div></div><div class="mcell"><div class="mbar2" style="background:#16a34a;opacity:.35"></div></div><div class="mcell"><div class="mbar2" style="background:#16a34a;opacity:.35"></div></div></div><div class="mrow"><div class="mcell"><div class="mbar2"></div></div><div class="mcell"><div class="mbar2"></div></div><div class="mcell"><div class="mbar2" style="background:#16a34a;opacity:.28"></div></div></div><div class="mrow"><div class="mcell"><div class="mbar2"></div></div><div class="mcell"><div class="mbar2"></div></div><div class="mcell"><div class="mbar2"></div></div></div><div class="mrow"><div class="mcell"><div class="mbar2"></div></div><div class="mcell"><div class="mbar2"></div></div><div class="mcell"><div class="mbar2" style="background:#16a34a;opacity:.25"></div></div></div></div></div></div><div class="winfo"><p class="wtitle">Expense Tracker — Xero Setup</p><p class="wdesc">Configured and categorized 3 months of expenses in Xero for an e-commerce startup, including bank feed connection and chart of accounts setup.</p><div class="wtags"><span class="wtag">Xero</span><span class="wtag">Bank Feeds</span><span class="wtag">Chart of Accounts</span></div></div></div>
-      <div class="wcard"><div class="wprev" style="background:#f8fafc;display:flex;align-items:center;justify-content:center;"><div style="background:white;border-radius:10px;padding:.9rem;width:82%;box-shadow:0 2px 10px rgba(0,0,0,.07);"><div style="font-size:.68rem;font-weight:700;color:var(--n2);margin-bottom:.6rem;font-family:'Playfair Display',serif">Invoice Management</div><div style="display:flex;flex-direction:column;gap:4px"><div style="display:flex;justify-content:space-between;align-items:center;font-size:.62rem"><span style="color:var(--muted)">INV-001 · Client A</span><span style="background:#dcfce7;color:#16a34a;padding:.1rem .4rem;border-radius:50px;font-weight:600">Paid</span></div><div style="display:flex;justify-content:space-between;align-items:center;font-size:.62rem"><span style="color:var(--muted)">INV-002 · Client B</span><span style="background:var(--p2l);color:var(--p2);padding:.1rem .4rem;border-radius:50px;font-weight:600">Pending</span></div><div style="display:flex;justify-content:space-between;align-items:center;font-size:.62rem"><span style="color:var(--muted)">INV-003 · Client C</span><span style="background:#fee2e2;color:#dc2626;padding:.1rem .4rem;border-radius:50px;font-weight:600">Overdue</span></div><div style="height:1px;background:var(--border);margin:.25rem 0"></div><div style="display:flex;justify-content:space-between;font-size:.65rem"><span style="color:var(--muted)">Total Receivable</span><span style="font-weight:700;color:var(--p1)">$4,250.00</span></div></div></div></div><div class="winfo"><p class="wtitle">Invoice Tracking System</p><p class="wdesc">Built a Google Sheets invoice tracker for a VA agency with auto-status logic (paid/pending/overdue), running totals, and client payment history.</p><div class="wtags"><span class="wtag">Google Sheets</span><span class="wtag">Wave</span><span class="wtag">Formulas</span></div></div></div>
+      <div class="wcard"><div class="wprev"><div class="msheet"><div class="msh"><div class="msht"></div></div><div class="mtable"><div class="mrow hdr"><div class="mcell"><div class="mbar2 hl"></div></div><div class="mcell"><div class="mbar2 hl"></div></div><div class="mcell"><div class="mbar2 hl"></div></div></div><div class="mrow"><div class="mcell"><div class="mbar2"></div></div><div class="mcell"><div class="mbar2"></div></div><div class="mcell"><div class="mbar2 am"></div></div></div><div class="mrow"><div class="mcell"><div class="mbar2"></div></div><div class="mcell"><div class="mbar2"></div></div><div class="mcell"><div class="mbar2"></div></div></div><div class="mrow"><div class="mcell"><div class="mbar2"></div></div><div class="mcell"><div class="mbar2"></div></div><div class="mcell"><div class="mbar2 am"></div></div></div><div class="mrow hdr"><div class="mcell"><div class="mbar2 hl"></div></div><div class="mcell"><div class="mbar2"></div></div><div class="mcell"><div class="mbar2 hl"></div></div></div></div></div></div><div class="winfo"><p class="wtitle">Monthly Profit and Loss Report</p><p class="wdesc">Prepared a three-month P&amp;L report tracking revenue streams, operating expenses by category, gross profit, and net income with month-on-month comparison and trend highlights.</p><div class="wtags"><span class="wtag">Google Sheets</span><span class="wtag">QuickBooks</span></div></div></div>
+      <div class="wcard"><div class="wprev" style="background:var(--p1l);display:flex;align-items:center;justify-content:center;"><div style="background:white;border-radius:10px;padding:1rem;width:84%;box-shadow:0 2px 10px rgba(0,0,0,.08);"><div style="font-size:.68rem;font-weight:700;color:var(--p1);text-transform:uppercase;margin-bottom:.55rem">Bank Reconciliation</div><div style="display:flex;flex-direction:column;gap:5px"><div style="display:flex;justify-content:space-between;font-size:.65rem;color:var(--muted)"><span>Book Balance</span><span style="font-weight:700;color:var(--n2)">$12,450.00</span></div><div style="display:flex;justify-content:space-between;font-size:.65rem;color:var(--muted)"><span>Outstanding Checks</span><span style="font-weight:700;color:var(--n2)">(−$320.00)</span></div><div style="display:flex;justify-content:space-between;font-size:.65rem;color:var(--muted)"><span>Deposits in Transit</span><span style="font-weight:700;color:var(--n2)">+$870.00</span></div><div style="height:1px;background:var(--border);margin:.3rem 0"></div><div style="display:flex;justify-content:space-between;font-size:.68rem"><span style="color:var(--muted)">Adjusted Difference</span><span style="font-weight:700;color:var(--green)">$0.00 ✓</span></div></div></div></div><div class="winfo"><p class="wtitle">Bank Reconciliation Report</p><p class="wdesc">Monthly bank reconciliation for a service business — identifying outstanding checks, deposits in transit, and bank charges to bring book and bank balances into full agreement.</p><div class="wtags"><span class="wtag">QuickBooks Online</span><span class="wtag">Excel</span></div></div></div>
+      <div class="wcard"><div class="wprev"><div class="msheet" style="background:#f0fdf4"><div class="msh" style="background:#166534"><div class="msht"></div></div><div class="mtable"><div class="mrow hdr"><div class="mcell"><div class="mbar2" style="background:#16a34a;opacity:.35"></div></div><div class="mcell"><div class="mbar2" style="background:#16a34a;opacity:.35"></div></div><div class="mcell"><div class="mbar2" style="background:#16a34a;opacity:.35"></div></div></div><div class="mrow"><div class="mcell"><div class="mbar2"></div></div><div class="mcell"><div class="mbar2"></div></div><div class="mcell"><div class="mbar2" style="background:#16a34a;opacity:.28"></div></div></div><div class="mrow"><div class="mcell"><div class="mbar2"></div></div><div class="mcell"><div class="mbar2"></div></div><div class="mcell"><div class="mbar2"></div></div></div><div class="mrow"><div class="mcell"><div class="mbar2"></div></div><div class="mcell"><div class="mbar2"></div></div><div class="mcell"><div class="mbar2" style="background:#16a34a;opacity:.25"></div></div></div></div></div></div><div class="winfo"><p class="wtitle">Expense Tracker — Xero Setup</p><p class="wdesc">Configured Xero for an e-commerce startup — connecting bank feeds, setting up the chart of accounts, and categorizing three months of transactions with client orientation.</p><div class="wtags"><span class="wtag">Xero</span><span class="wtag">Bank Feeds</span><span class="wtag">Chart of Accounts</span></div></div></div>
+      <div class="wcard"><div class="wprev" style="background:#f8fafc;display:flex;align-items:center;justify-content:center;"><div style="background:white;border-radius:10px;padding:.9rem;width:84%;box-shadow:0 2px 10px rgba(0,0,0,.07);"><div style="font-size:.68rem;font-weight:700;color:var(--n2);margin-bottom:.6rem;font-family:'Playfair Display',serif">Invoice Management</div><div style="display:flex;flex-direction:column;gap:5px"><div style="display:flex;justify-content:space-between;align-items:center;font-size:.62rem"><span style="color:var(--muted)">INV-001 · Client A</span><span style="background:#dcfce7;color:#16a34a;padding:.1rem .4rem;border-radius:50px;font-weight:600">Paid</span></div><div style="display:flex;justify-content:space-between;align-items:center;font-size:.62rem"><span style="color:var(--muted)">INV-002 · Client B</span><span style="background:var(--p2l);color:var(--p2);padding:.1rem .4rem;border-radius:50px;font-weight:600">Pending</span></div><div style="display:flex;justify-content:space-between;align-items:center;font-size:.62rem"><span style="color:var(--muted)">INV-003 · Client C</span><span style="background:#fee2e2;color:#dc2626;padding:.1rem .4rem;border-radius:50px;font-weight:600">Overdue</span></div><div style="height:1px;background:var(--border);margin:.3rem 0"></div><div style="display:flex;justify-content:space-between;font-size:.65rem"><span style="color:var(--muted)">Total Receivable</span><span style="font-weight:700;color:var(--p1)">$4,250.00</span></div></div></div></div><div class="winfo"><p class="wtitle">Invoice and Collections Management</p><p class="wdesc">Built a Google Sheets invoice tracker with auto-status logic, automated follow-up reminders, and running totals to support collections management and reduce overdue accounts.</p><div class="wtags"><span class="wtag">Google Sheets</span><span class="wtag">Wave</span><span class="wtag">Formulas</span></div></div></div>
+      <div class="wcard"><div class="wprev" style="background:#fffbf5;display:flex;align-items:center;justify-content:center;"><div style="background:white;border-radius:10px;padding:.9rem;width:86%;box-shadow:0 2px 10px rgba(0,0,0,.07);"><div style="font-size:.68rem;font-weight:700;color:var(--p2);text-transform:uppercase;margin-bottom:.65rem">AR Aging Report</div><div style="display:flex;flex-direction:column;gap:5px"><div style="display:flex;justify-content:space-between;align-items:center;font-size:.6rem;color:var(--muted)"><span>Current (0–30 days)</span><span style="font-weight:700;color:var(--green)">$3,200</span></div><div style="height:3px;background:#e0e0e0;border-radius:2px;overflow:hidden"><div style="width:70%;height:100%;background:var(--green)"></div></div><div style="display:flex;justify-content:space-between;align-items:center;font-size:.6rem;color:var(--muted)"><span>31–60 days</span><span style="font-weight:700;color:var(--p2)">$1,100</span></div><div style="height:3px;background:#e0e0e0;border-radius:2px;overflow:hidden"><div style="width:35%;height:100%;background:var(--p2)"></div></div><div style="display:flex;justify-content:space-between;align-items:center;font-size:.6rem;color:var(--muted)"><span>61–90 days</span><span style="font-weight:700;color:var(--orange)">$640</span></div><div style="height:3px;background:#e0e0e0;border-radius:2px;overflow:hidden"><div style="width:20%;height:100%;background:var(--orange)"></div></div><div style="display:flex;justify-content:space-between;align-items:center;font-size:.6rem;color:var(--muted)"><span>90+ days</span><span style="font-weight:700;color:#dc2626">$310</span></div><div style="height:3px;background:#e0e0e0;border-radius:2px;overflow:hidden"><div style="width:12%;height:100%;background:#dc2626"></div></div></div></div></div><div class="winfo"><p class="wtitle">Accounts Receivable Aging Report</p><p class="wdesc">Full accounts receivable aging analysis — categorizing outstanding invoices by aging bucket to prioritize collections and support cash flow planning.</p><div class="wtags"><span class="wtag">QuickBooks</span><span class="wtag">Google Sheets</span><span class="wtag">AR Analysis</span></div></div></div>
+      <div class="wcard"><div class="wprev" style="background:#f0f4f8;display:flex;align-items:center;justify-content:center;"><div style="background:white;border-radius:10px;padding:.9rem;width:86%;box-shadow:0 2px 10px rgba(0,0,0,.07);"><div style="font-size:.68rem;font-weight:700;color:var(--p1);text-transform:uppercase;margin-bottom:.55rem">Financial Package</div><div style="display:flex;flex-direction:column;gap:5px"><div style="display:flex;justify-content:space-between;font-size:.62rem;color:var(--muted)"><span>Trial Balance</span><span style="color:var(--green);font-weight:600">✓ Balanced</span></div><div style="display:flex;justify-content:space-between;font-size:.62rem;color:var(--muted)"><span>Profit and Loss</span><span style="color:var(--green);font-weight:600">✓ Ready</span></div><div style="display:flex;justify-content:space-between;font-size:.62rem;color:var(--muted)"><span>Balance Sheet</span><span style="color:var(--green);font-weight:600">✓ Ready</span></div><div style="display:flex;justify-content:space-between;font-size:.62rem;color:var(--muted)"><span>Notes for Accountant</span><span style="color:var(--green);font-weight:600">✓ Attached</span></div></div></div></div><div class="winfo"><p class="wtitle">Monthly Financial Package Preparation</p><p class="wdesc">Complete monthly financial package for a client's accountant — trial balance, P&amp;L, Balance Sheet inputs, and annotated notes on adjusting entries and reconciliation differences.</p><div class="wtags"><span class="wtag">Xero</span><span class="wtag">Google Sheets</span><span class="wtag">Trial Balance</span></div></div></div>
     </div>
   </div>
+
   <div class="psec" id="sec-smm">
-    <div class="psec-hd"><h3>&#128241; Social Media Management</h3><span class="ptag">Side Niche</span></div>
+    <div class="psec-hd"><h3>📱 Social Media Management</h3><span class="ptag">Side Niche</span></div>
     <div class="pgrid">
-      <div class="wcard"><div class="wprev"><div class="migrid"><div class="mpr"><div class="mav"></div><div class="mhd"></div></div><div class="mg3"><div class="mgc" style="background:var(--p1);opacity:.7"></div><div class="mgc" style="background:var(--p2);opacity:.7"></div><div class="mgc" style="background:#7c3aed;opacity:.45"></div><div class="mgc" style="background:var(--p2l);border:1px solid var(--p2)"></div><div class="mgc" style="background:var(--p1);opacity:.5"></div><div class="mgc" style="background:#f0fdf4"></div><div class="mgc" style="background:var(--p2);opacity:.4"></div><div class="mgc" style="background:var(--n2);opacity:.25"></div><div class="mgc" style="background:var(--p1l)"></div></div></div></div><div class="winfo"><p class="wtitle">Instagram Feed Branding</p><p class="wdesc">Designed a cohesive 9-post Instagram grid for a wellness brand — establishing consistent visual identity through color palette, typography, and layout templates.</p><div class="wtags"><span class="wtag">Canva</span><span class="wtag">Instagram</span><span class="wtag">Brand Strategy</span></div></div></div>
-      <div class="wcard"><div class="wprev"><div class="mcal"><div class="mcalh"><div class="mcalt"></div></div><div style="display:flex;justify-content:space-around;margin-bottom:3px"><span style="font-size:.55rem;color:var(--muted);font-weight:600">M</span><span style="font-size:.55rem;color:var(--muted);font-weight:600">T</span><span style="font-size:.55rem;color:var(--muted);font-weight:600">W</span><span style="font-size:.55rem;color:var(--muted);font-weight:600">T</span><span style="font-size:.55rem;color:var(--muted);font-weight:600">F</span><span style="font-size:.55rem;color:var(--muted);font-weight:600">S</span><span style="font-size:.55rem;color:var(--muted);font-weight:600">S</span></div><div class="mcalg"><div class="mday hp"></div><div class="mday"></div><div class="mday am"></div><div class="mday"></div><div class="mday hp"></div><div class="mday"></div><div class="mday"></div><div class="mday"></div><div class="mday hp"></div><div class="mday"></div><div class="mday am"></div><div class="mday"></div><div class="mday hp"></div><div class="mday"></div><div class="mday hp"></div><div class="mday"></div><div class="mday am"></div><div class="mday"></div><div class="mday"></div><div class="mday hp"></div><div class="mday"></div></div></div></div><div class="winfo"><p class="wtitle">30-Day Content Calendar</p><p class="wdesc">Created a full monthly content calendar for a fitness coach — mapping post types, caption angles, hashtag sets, and publishing schedule across Instagram and Facebook.</p><div class="wtags"><span class="wtag">Notion</span><span class="wtag">Later</span><span class="wtag">Meta Suite</span></div></div></div>
-      <div class="wcard"><div class="wprev" style="background:linear-gradient(135deg,#1e1b4b,#312e81);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.6rem"><div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;width:75%"><div style="background:var(--p1);border-radius:6px;height:55px;opacity:.85"></div><div style="background:var(--p2);border-radius:6px;height:55px;opacity:.85"></div><div style="background:rgba(255,255,255,.08);border-radius:6px;height:55px"></div><div style="background:var(--p1);border-radius:6px;height:55px;opacity:.45"></div></div><div style="font-size:.6rem;color:rgba(255,255,255,.55);letter-spacing:.12em;text-transform:uppercase">Branded Templates</div></div><div class="winfo"><p class="wtitle">Reusable Canva Template Pack</p><p class="wdesc">Created 8 branded Canva templates for a business coach — quote posts, tip carousels, story slides, and announcements, all editable and on-brand.</p><div class="wtags"><span class="wtag">Canva</span><span class="wtag">Brand Design</span><span class="wtag">Templates</span></div></div></div>
-      <div class="wcard"><div class="wprev" style="background:#f8fafc;display:flex;align-items:center;justify-content:center;"><div style="width:86%;background:white;border-radius:10px;padding:.9rem;box-shadow:0 2px 10px rgba(0,0,0,.07);"><div style="font-size:.68rem;font-weight:700;color:var(--n2);margin-bottom:.55rem;font-family:'Playfair Display',serif">Monthly Analytics Report</div><div style="display:flex;gap:.45rem;margin-bottom:.45rem"><div style="flex:1;background:var(--p1l);border-radius:6px;padding:.35rem;text-align:center"><div style="font-size:.8rem;font-weight:700;color:var(--p1)">+43%</div><div style="font-size:.52rem;color:var(--muted)">Reach</div></div><div style="flex:1;background:var(--p2l);border-radius:6px;padding:.35rem;text-align:center"><div style="font-size:.8rem;font-weight:700;color:var(--p2)">+28%</div><div style="font-size:.52rem;color:var(--muted)">Followers</div></div><div style="flex:1;background:#f0fdf4;border-radius:6px;padding:.35rem;text-align:center"><div style="font-size:.8rem;font-weight:700;color:#16a34a">5.2%</div><div style="font-size:.52rem;color:var(--muted)">Eng. Rate</div></div></div><div style="height:28px;background:var(--n1);border-radius:4px;position:relative;overflow:hidden"><div style="position:absolute;bottom:0;left:5%;width:9%;height:55%;background:var(--p1);opacity:.55;border-radius:2px 2px 0 0"></div><div style="position:absolute;bottom:0;left:20%;width:9%;height:75%;background:var(--p1);opacity:.55;border-radius:2px 2px 0 0"></div><div style="position:absolute;bottom:0;left:35%;width:9%;height:50%;background:var(--p1);opacity:.55;border-radius:2px 2px 0 0"></div><div style="position:absolute;bottom:0;left:50%;width:9%;height:88%;background:var(--p2);opacity:.65;border-radius:2px 2px 0 0"></div><div style="position:absolute;bottom:0;left:65%;width:9%;height:68%;background:var(--p2);opacity:.6;border-radius:2px 2px 0 0"></div><div style="position:absolute;bottom:0;left:80%;width:9%;height:100%;background:var(--p2);opacity:.75;border-radius:2px 2px 0 0"></div></div></div></div><div class="winfo"><p class="wtitle">Monthly Analytics Report</p><p class="wdesc">Compiled a monthly performance report for a health brand — highlighting follower growth, top posts, reach, and engagement rate with strategic recommendations.</p><div class="wtags"><span class="wtag">Meta Business Suite</span><span class="wtag">Google Sheets</span></div></div></div>
+      <div class="wcard"><div class="wprev"><div class="migrid"><div class="mpr"><div class="mav"></div><div class="mhd"></div></div><div class="mg3"><div class="mgc" style="background:var(--p1);opacity:.7"></div><div class="mgc" style="background:var(--p2);opacity:.7"></div><div class="mgc" style="background:#7c3aed;opacity:.45"></div><div class="mgc" style="background:var(--p2l);border:1px solid var(--p2)"></div><div class="mgc" style="background:var(--p1);opacity:.5"></div><div class="mgc" style="background:#f0fdf4"></div><div class="mgc" style="background:var(--p2);opacity:.4"></div><div class="mgc" style="background:var(--n2);opacity:.25"></div><div class="mgc" style="background:var(--p1l)"></div></div></div></div><div class="winfo"><p class="wtitle">Instagram Feed Branding</p><p class="wdesc">Designed a cohesive nine-post Instagram grid for a wellness brand — establishing consistent visual identity through a defined color palette, typography, and reusable post layout templates.</p><div class="wtags"><span class="wtag">Canva</span><span class="wtag">Instagram</span><span class="wtag">Brand Strategy</span></div></div></div>
+      <div class="wcard"><div class="wprev"><div class="mcal"><div class="mcalh"><div class="mcalt"></div></div><div style="display:flex;justify-content:space-around;margin-bottom:3px"><span style="font-size:.55rem;color:var(--muted);font-weight:600">M</span><span style="font-size:.55rem;color:var(--muted);font-weight:600">T</span><span style="font-size:.55rem;color:var(--muted);font-weight:600">W</span><span style="font-size:.55rem;color:var(--muted);font-weight:600">T</span><span style="font-size:.55rem;color:var(--muted);font-weight:600">F</span><span style="font-size:.55rem;color:var(--muted);font-weight:600">S</span><span style="font-size:.55rem;color:var(--muted);font-weight:600">S</span></div><div class="mcalg"><div class="mday hp"></div><div class="mday"></div><div class="mday am"></div><div class="mday"></div><div class="mday hp"></div><div class="mday"></div><div class="mday"></div><div class="mday"></div><div class="mday hp"></div><div class="mday"></div><div class="mday am"></div><div class="mday"></div><div class="mday hp"></div><div class="mday"></div><div class="mday hp"></div><div class="mday"></div><div class="mday am"></div><div class="mday"></div><div class="mday"></div><div class="mday hp"></div><div class="mday"></div></div><div style="display:flex;gap:8px;margin-top:4px"><div style="display:flex;align-items:center;gap:3px;font-size:.58rem;color:var(--muted)"><div style="width:7px;height:7px;border-radius:2px;background:var(--p1l);border:1px solid var(--p1)"></div>Post</div><div style="display:flex;align-items:center;gap:3px;font-size:.58rem;color:var(--muted)"><div style="width:7px;height:7px;border-radius:2px;background:var(--p2l);border:1px solid var(--p2)"></div>Reel</div></div></div></div><div class="winfo"><p class="wtitle">30-Day Content Calendar</p><p class="wdesc">Full monthly content calendar for a fitness coach — mapping out post types, caption angles, hashtag sets, and a publishing schedule across Instagram and Facebook.</p><div class="wtags"><span class="wtag">Notion</span><span class="wtag">Later</span><span class="wtag">Meta Suite</span></div></div></div>
+      <div class="wcard"><div class="wprev" style="background:linear-gradient(135deg,#1e1b4b,#312e81);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.6rem"><div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;width:75%"><div style="background:var(--p1);border-radius:6px;height:60px;opacity:.85"></div><div style="background:var(--p2);border-radius:6px;height:60px;opacity:.85"></div><div style="background:rgba(255,255,255,.08);border-radius:6px;height:60px"></div><div style="background:var(--orange);border-radius:6px;height:60px;opacity:.65"></div></div><div style="font-size:.6rem;color:rgba(255,255,255,.55);letter-spacing:.12em;text-transform:uppercase">Branded Templates</div></div><div class="winfo"><p class="wtitle">Reusable Canva Template Pack</p><p class="wdesc">Created eight branded Canva templates for a business coach — quote posts, tip carousels, story slides, and announcement graphics — all fully editable and built for monthly reuse.</p><div class="wtags"><span class="wtag">Canva</span><span class="wtag">Brand Design</span></div></div></div>
+      <div class="wcard"><div class="wprev" style="background:#f8fafc;display:flex;align-items:center;justify-content:center;"><div style="width:88%;background:white;border-radius:10px;padding:.9rem;box-shadow:0 2px 10px rgba(0,0,0,.07);"><div style="font-size:.68rem;font-weight:700;color:var(--n2);margin-bottom:.55rem;font-family:'Playfair Display',serif">Monthly Analytics</div><div style="display:flex;gap:.45rem;margin-bottom:.5rem"><div style="flex:1;background:var(--p1l);border-radius:6px;padding:.4rem;text-align:center"><div style="font-size:.85rem;font-weight:700;color:var(--p1)">+43%</div><div style="font-size:.52rem;color:var(--muted)">Reach</div></div><div style="flex:1;background:var(--p2l);border-radius:6px;padding:.4rem;text-align:center"><div style="font-size:.85rem;font-weight:700;color:var(--p2)">+28%</div><div style="font-size:.52rem;color:var(--muted)">Followers</div></div><div style="flex:1;background:var(--greenl);border-radius:6px;padding:.4rem;text-align:center"><div style="font-size:.85rem;font-weight:700;color:var(--green)">5.2%</div><div style="font-size:.52rem;color:var(--muted)">Eng.</div></div></div><div style="height:32px;background:var(--n1);border-radius:4px;position:relative;overflow:hidden"><div style="position:absolute;bottom:0;left:5%;width:9%;height:55%;background:var(--p1);opacity:.6;border-radius:2px 2px 0 0"></div><div style="position:absolute;bottom:0;left:20%;width:9%;height:75%;background:var(--p1);opacity:.6;border-radius:2px 2px 0 0"></div><div style="position:absolute;bottom:0;left:35%;width:9%;height:50%;background:var(--p1);opacity:.6;border-radius:2px 2px 0 0"></div><div style="position:absolute;bottom:0;left:50%;width:9%;height:88%;background:var(--p2);opacity:.7;border-radius:2px 2px 0 0"></div><div style="position:absolute;bottom:0;left:65%;width:9%;height:68%;background:var(--orange);opacity:.6;border-radius:2px 2px 0 0"></div><div style="position:absolute;bottom:0;left:80%;width:9%;height:100%;background:var(--p2);opacity:.8;border-radius:2px 2px 0 0"></div></div></div></div><div class="winfo"><p class="wtitle">Monthly Analytics Report</p><p class="wdesc">Monthly performance report for a health brand — follower growth, top posts, reach, engagement rate, and data-backed recommendations for the following month.</p><div class="wtags"><span class="wtag">Meta Business Suite</span><span class="wtag">Google Sheets</span></div></div></div>
+      <div class="wcard"><div class="wprev" style="background:#0f172a;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.6rem;padding:1rem"><div style="display:flex;gap:.5rem;width:85%"><div style="flex:1;background:var(--p1);border-radius:8px;height:85px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:5px;padding:.6rem"><div style="height:5px;width:65%;background:rgba(255,255,255,.6);border-radius:2px"></div><div style="height:5px;width:45%;background:rgba(255,255,255,.3);border-radius:2px"></div><div style="height:15px;width:55%;background:var(--p2);border-radius:50px;margin-top:5px"></div></div><div style="flex:1;background:var(--orange);border-radius:8px;height:85px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:5px;padding:.6rem"><div style="height:5px;width:65%;background:rgba(255,255,255,.6);border-radius:2px"></div><div style="height:5px;width:45%;background:rgba(255,255,255,.3);border-radius:2px"></div><div style="height:15px;width:55%;background:white;border-radius:50px;margin-top:5px"></div></div></div><div style="font-size:.58rem;color:rgba(255,255,255,.45);letter-spacing:.1em;text-transform:uppercase">Facebook and Instagram Ads</div></div><div class="winfo"><p class="wtitle">Social Media Ad Graphics Pack</p><p class="wdesc">Designed Facebook and Instagram ad creatives for a course launch — multiple size variants including feed, story, and carousel formats with A/B-testable headline and CTA variations.</p><div class="wtags"><span class="wtag">Canva</span><span class="wtag">Facebook Ads</span></div></div></div>
+      <div class="wcard"><div class="wprev" style="background:#0077b5;display:flex;align-items:center;justify-content:center;padding:1.2rem"><div style="background:white;border-radius:10px;padding:.9rem;width:85%;box-shadow:0 2px 12px rgba(0,0,0,.2);"><div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.65rem"><div style="width:26px;height:26px;border-radius:50%;background:#0077b5;flex-shrink:0"></div><div><div style="height:5px;width:75px;background:#333;border-radius:2px;margin-bottom:3px"></div><div style="height:4px;width:55px;background:#aaa;border-radius:2px"></div></div></div><div style="display:flex;flex-direction:column;gap:4px;margin-bottom:.55rem"><div style="height:5px;background:#e0e0e0;border-radius:2px"></div><div style="height:5px;background:#e0e0e0;border-radius:2px;width:80%"></div><div style="height:5px;background:#e0e0e0;border-radius:2px;width:60%"></div></div><div style="display:flex;gap:.6rem"><div style="font-size:.55rem;color:#0077b5;font-weight:600">👍 Like</div><div style="font-size:.55rem;color:#666;font-weight:600">💬 Comment</div><div style="font-size:.55rem;color:#666;font-weight:600">↗ Share</div></div></div></div><div class="winfo"><p class="wtitle">LinkedIn Content Strategy</p><p class="wdesc">Developed a 30-day LinkedIn content plan for a B2B consultant — thought leadership posts, polls, carousel posts, and engagement prompts optimized for the LinkedIn algorithm.</p><div class="wtags"><span class="wtag">LinkedIn</span><span class="wtag">Canva</span><span class="wtag">Content Strategy</span></div></div></div>
     </div>
   </div>
 </section>
 
+<!-- ══ HOW TO START ══ -->
+<section id="process">
+  <span class="stag">Getting Started</span>
+  <h2 class="stitle">Ready to Work Together?<br>Follow These Steps</h2>
+  <p class="ssub">From our first conversation to the moment we start working together — here is exactly what the process looks like so you always know what to expect.</p>
+  <div class="process-grid">
+    <div class="step-card dark">
+      <div class="step-num">01</div>
+      <h4>Explore Our Services</h4>
+      <p>Browse the services listed here or tell me what you need. Every engagement is customised based on your goals and business requirements.</p>
+    </div>
+    <div class="step-card light">
+      <div class="step-num">02</div>
+      <h4>Book a Discovery Call</h4>
+      <p>Let's chat about your vision and challenges to see how I can best support you. No pressure — just a friendly conversation about what you need.</p>
+    </div>
+    <div class="step-card dark">
+      <div class="step-num">03</div>
+      <h4>Choose Your Package</h4>
+      <p>Pick from the service offerings based on your needs and budget. Not sure which fits? I'll guide you toward the most practical option.</p>
+    </div>
+    <div class="step-card light">
+      <div class="step-num">04</div>
+      <h4>Onboarding</h4>
+      <p>I'll send a quick form to gather project details, access credentials, and preferences — then we'll schedule a kick-off call to get things moving.</p>
+    </div>
+    <div class="step-card dark">
+      <div class="step-num">05</div>
+      <h4>Meet and Align</h4>
+      <p>We hop on a call to finalise the plan, confirm timelines, set expectations, and make sure we're fully aligned before the work begins.</p>
+    </div>
+    <div class="step-card light">
+      <div class="step-num">06</div>
+      <h4>We Get to Work</h4>
+      <p>You relax. I build, manage, and support while keeping you updated every step of the way. Results delivered with care and precision.</p>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:2.5rem">
+    <a href="https://calendly.com/yang-virtualsolutions/30?back=1&amp;month=2026-06" target="_blank" class="btn btn-p" style="font-size:1rem;padding:.9rem 2.4rem">Let's Connect →</a>
+  </div>
+</section>
+
+<!-- ══ PRICING ══ -->
+<section id="pricing">
+  <span class="stag">Investment</span>
+  <h2 class="stitle">Course Creation<br>Retainer Packages</h2>
+  <p class="ssub">Transparent, structured pricing for online course creation — from concept to launch. Every package is designed to take your course idea forward with professional execution and reliable delivery.</p>
+  <div class="pkg-g">
+    <div class="pkg">
+      <div class="pkg-icon">🌱</div>
+      <span class="ptier">Package 1 — Basic</span>
+      <h3 class="pkg-name">Basic Course Launch</h3>
+      <div class="pkg-price">$995 <span class="pkg-price-sm">/project</span></div>
+      <div class="pkg-div"></div>
+      <ul>
+        <li><span>Course Development </span> — brainstorming to define course objectives and target audience</li>
+        <li><span>Curriculum Design</span> — structuring course content into modules and lessons</li>
+        <li><span>Slide Deck Creation</span> — designing visually engaging presentations for course lectures</li>
+        <li><span>Video Editing</span> — basic editing of video content for smooth and professional delivery</li>
+        <li><span>Course Launch Support</span> — guidance on platform setup and initial marketing strategies</li>
+      </ul>
+      <a href="https://calendly.com/yang-virtualsolutions/30?back=1&amp;month=2026-06" target="_blank" class="pkg-cta">Book a Call</a>
+    </div>
+
+    <div class="pkg">
+      <div class="pkg-icon">🚀</div>
+      <span class="ptier">Package 2 — Standard</span>
+      <h3 class="pkg-name">Standard Course Build</h3>
+      <div class="pkg-price">$1,495 <span class="pkg-price-sm">/project</span></div>
+      <div class="pkg-div"></div>
+      <p class="pkg-incl">Includes everything in Basic, plus:</p>
+      <ul>
+        <li><span>Content Creation Assistance</span> — worksheets, quizzes, and course assignments</li>
+        <li><span>Advanced Video Editing</span> — professional editing with additional effects and graphics</li>
+        <li><span>Learning Platform Setup</span> — full setup, customization, and branding of the course platform</li>
+        <li><span>Marketing Materials</span> — course trailer, social media graphics, and email templates</li>
+      </ul>
+      <a href="https://calendly.com/yang-virtualsolutions/30?back=1&amp;month=2026-06" target="_blank" class="pkg-cta">Book a Call</a>
+    </div>
+
+    <div class="pkg feat">
+      <div class="pkg-icon">⭐</div>
+      <span class="ptier">Package 3 — Premium</span>
+      <h3 class="pkg-name">Premium Full-Service</h3>
+      <div class="pkg-price">$2,495 <span class="pkg-price-sm">/project</span></div>
+      <div class="pkg-div"></div>
+      <p class="pkg-incl">Includes everything in Standard, plus:</p>
+      <ul>
+        <li><span>Comprehensive CD</span> — full-service content creation, video production, and platform setup</li>
+        <li><span>Advanced Marketing</span> — email campaigns, socmed advertising, and community building</li>
+        <li><span>Post-Launch Support</span> — troubleshooting, engagement strategies, and course updates</li>
+        <li><span>Customized Extras</span> — live web support, coaching sessions, and premium course materials</li>
+      </ul>
+      <a href="https://calendly.com/yang-virtualsolutions/30?back=1&amp;month=2026-06" target="_blank" class="pkg-cta">Book a Call</a>
+    </div>
+    <div class="pkg">
+      <div class="pkg-icon">🎯</div>
+      <span class="ptier">Package 4 — Custom</span>
+      <h3 class="pkg-name">Customised Package</h3>
+      <div class="pkg-price" style="font-size:1.3rem">Custom Pricing</div>
+      <div class="pkg-pnote">Determined after consultation and scope review</div>
+      <div class="pkg-div"></div>
+      <ul>
+        <li>Tailored entirely to your specific requirements and budget</li>
+        <li>Flexible mix of services from Basic, Standard, and Premium packages</li>
+        <li>Additional customizations based on your unique project needs</li>
+        <li>Pricing determined after a detailed consultation and scope assessment</li>
+        <li>Flexible delivery timeline aligned with your goals and expectations</li>
+      </ul>
+      <a href="https://calendly.com/yang-virtualsolutions/30?back=1&amp;month=2026-06" target="_blank" class="pkg-cta">Book a Call</a>
+    </div>
+  </div>
+
+  <!-- SIDE NICHE PRICING -->
+  <div class="side-pricing-wrap">
+    <div class="side-pricing-header">
+      <span class="stag">Side Niche Rates</span>
+      <h3>Social Media Management and Bookkeeping</h3>
+      <p>Flexible pricing for support services, available on a part-time retainer or hourly basis — designed to fit your business needs without a long-term commitment.</p>
+      <div class="side-avail-note">Part-time availability only for side niche services</div>
+    </div>
+    <div class="side-pkg-g">
+      <!-- SMM on the LEFT -->
+      <div class="spkg">
+        <div class="spkg-icon">📱</div>
+        <h4>Social Media Management</h4>
+        <p class="spkg-desc">Consistent, on-brand social media content — planned, designed, and scheduled so your business stays visible and your audience stays engaged, without taking up your time.</p>
+        <div class="spkg-row">
+          <div class="spkg-option">
+            <div>
+              <div class="spkg-option-label">Part-Time Retainer</div>
+              <div class="spkg-option-sub">15 hours per week · Part-time availability</div>
+            </div>
+            <div class="spkg-option-price">$600<small>/month</small></div>
+          </div>
+          <div class="spkg-option">
+            <div>
+              <div class="spkg-option-label">Hourly Rate</div>
+              <div class="spkg-option-sub">Flexible · Ideal for one-time projects</div>
+            </div>
+            <div class="spkg-option-price">$10<small>/hour</small></div>
+          </div>
+        </div>
+      </div>
+      <!-- BOOKKEEPING on the RIGHT -->
+      <div class="spkg">
+        <div class="spkg-icon">📊</div>
+        <h4>Bookkeeping</h4>
+        <p class="spkg-desc">Accurate, organized, and audit-ready books handled with the care of someone who has done this professionally. Available part-time for ongoing support or on an hourly basis for one-time tasks.</p>
+        <div class="spkg-row">
+          <div class="spkg-option">
+            <div>
+              <div class="spkg-option-label">Part-Time Retainer</div>
+              <div class="spkg-option-sub">15 hours per week · Part-time availability</div>
+            </div>
+            <div class="spkg-option-price">$600<small>/month</small></div>
+          </div>
+          <div class="spkg-option">
+            <div>
+              <div class="spkg-option-label">Hourly Rate</div>
+              <div class="spkg-option-sub">Flexible · Ideal for one-time tasks</div>
+            </div>
+            <div class="spkg-option-price">$10<small>/hour</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TESTIMONIALS ══ -->
 <section id="testimonials">
   <span class="stag">Social Proof</span>
   <h2 class="stitle">Kind Words<br>From Clients</h2>
-  <p class="ssub">Here's what past clients and collaborators say about working with me. Real results, real relationships.</p>
-  <div class="tg">
-    <div class="tc"><div class="tq">"</div><p class="tt">Working with [Your Name] was the best investment for my course launch. She set up my entire Kajabi platform and email automations — I didn't need to think about the tech at all. My course went live on time and looked incredibly professional.</p><div class="tau"><div class="tav" style="background:var(--p1)">SR</div><div><p class="tn">Sarah R.</p><p class="tr">Course Creator &amp; Online Coach</p></div></div></div>
-    <div class="tc"><div class="tq">"</div><p class="tt">I had 6 months of unreconciled books and [Your Name] cleaned everything up in two weeks. She's thorough, communicates clearly, and I now have clean financials delivered every month without lifting a finger.</p><div class="tau"><div class="tav" style="background:var(--p2)">MK</div><div><p class="tn">Marco K.</p><p class="tr">E-commerce Store Owner</p></div></div></div>
-    <div class="tc"><div class="tq">"</div><p class="tt">Our Instagram engagement doubled within 45 days of [Your Name] taking over. She understood our brand voice immediately, her graphics are always on-point, and she never needs to be micromanaged. Absolute gem!</p><div class="tau"><div class="tav" style="background:var(--n2)">JT</div><div><p class="tn">Jamie T.</p><p class="tr">Wellness Brand Founder</p></div></div></div>
+  <p class="ssub">Yang shows up prepared, thorough, and invested in your success. Here is what clients say about working together.</p>
+  <div class="tcarousel-outer">
+    <button class="car-btn car-prev" onclick="scrollTesti(-1)">‹</button>
+    <div class="tcarousel" id="tcarousel">
+      <div class="tc"><div class="tq">"</div><p class="tt">Yang set up my entire course on Kajabi — from module structure to automated email sequences — and I did not have to explain anything twice. Her attention to detail made the whole process feel effortless. My course launched on time and my students love the experience.</p><div class="tau"><div class="tav" style="background:var(--p1)">SR</div><div><p class="tn">Sarah R.</p><p class="tr">Online Course Creator and Business Coach</p></div></div></div>
+      <div class="tc"><div class="tq">"</div><p class="tt">What sets Yang apart is that she already understood bookkeeping at a professional level. She cleaned up four months of unreconciled accounts, built me an invoice tracker, and now I receive a clean financial report every month without having to ask for it.</p><div class="tau"><div class="tav" style="background:var(--p2)">MK</div><div><p class="tn">Marco K.</p><p class="tr">E-commerce Business Owner</p></div></div></div>
+      <div class="tc"><div class="tq">"</div><p class="tt">Yang redesigned our entire Instagram presence — consistent brand colors, reusable templates, and a proper content calendar. Our engagement nearly doubled in six weeks. She takes initiative, communicates clearly, and always delivers on time.</p><div class="tau"><div class="tav" style="background:var(--n2)">JT</div><div><p class="tn">Jamie T.</p><p class="tr">Wellness Brand Founder</p></div></div></div>
+      <div class="tc"><div class="tq">"</div><p class="tt">Yang built our coaching website from scratch and it was exactly what we envisioned — and then some. She was patient, thorough, and proactive in suggesting improvements we had not even thought of. The end result looked far more professional than we expected.</p><div class="tau"><div class="tav" style="background:#7c3aed">JP</div><div><p class="tn">JP Santos</p><p class="tr">Business and Leadership Coach</p></div></div></div>
+      <div class="tc"><div class="tq">"</div><p class="tt">I came to Yang with a rough outline of my course and she turned it into a fully structured, beautifully designed program on Teachable. From the curriculum layout to the graphics and email sequences, every detail was handled with care. My students have been sending excellent feedback.</p><div class="tau"><div class="tav" style="background:var(--green)">AL</div><div><p class="tn">Alyssa L.</p><p class="tr">Health and Wellness Coach</p></div></div></div>
+      <div class="tc"><div class="tq">"</div><p class="tt">I came to Yang with months of unposted transactions and zero structure. Within three weeks, everything was reconciled, categorized, and organized in QuickBooks. She is thorough, communicates clearly, and genuinely understands accounting — not just data entry.</p><div class="tau"><div class="tav" style="background:#dc2626">RL</div><div><p class="tn">Robert L.</p><p class="tr">Freelance Photographer and Creative</p></div></div></div>
+      <div class="tc"><div class="tq">"</div><p class="tt">Our social media had been inconsistent for over a year until Yang stepped in. She created a content calendar, designed branded templates, and took over posting and engagement. We saw consistent growth from the very first month. She delivers without needing constant direction.</p><div class="tau"><div class="tav" style="background:var(--orange)">TC</div><div><p class="tn">Trish C.</p><p class="tr">Online Boutique Owner</p></div></div></div>
+    </div>
+    <button class="car-btn car-next" onclick="scrollTesti(1)">›</button>
   </div>
+  <div class="car-dots" id="carDots"><button class="car-dot active"></button><button class="car-dot"></button><button class="car-dot"></button><button class="car-dot"></button><button class="car-dot"></button><button class="car-dot"></button><button class="car-dot"></button></div>
 </section>
 
+<!-- ══ CONTACT ══ -->
 <section id="contact">
   <div class="cg">
     <div class="ci">
       <span class="stag">Get In Touch</span>
-      <h2 class="stitle">Ready to work<br>together?</h2>
-      <p>Whether you need a website built, a course set up, your books cleaned up, or your social media taken off your plate — I'd love to hear from you. Fill out the form and I'll respond within 24 hours.</p>
+      <h2 class="stitle">Ready to build<br>something great?</h2>
+      <p>Whether you need a course built, a website launched, your books organized, or your social media brought to life — I would love to hear about your project. Fill out the form and I will get back to you within 24 hours.</p>
       <div class="citems">
-        <div class="citem"><div class="cion">&#128231;</div><span>yourname@email.com</span></div>
-        <div class="citem"><div class="cion">&#128188;</div><span>Available on Upwork &amp; OnlineJobs.ph</span></div>
-        <div class="citem"><div class="cion">&#128336;</div><span>Open to Part-time &amp; Full-time Roles</span></div>
-        <div class="citem"><div class="cion">&#127759;</div><span>Based in the Philippines · Any timezone welcome</span></div>
+        <div class="citem"><div class="cion">📧</div><span>yangvirtualsolutions@gmail.com</span></div>
+        <div class="citem"><div class="cion">💼</div><span>Available on Upwork and OnlineJobs.ph</span></div>
+        <div class="citem"><div class="cion">🕐</div><span>Open to Full-time and Part-time Roles</span></div>
+        <div class="citem"><div class="cion">🌏</div><span>Based in the Philippines · Any timezone welcome</span></div>
       </div>
     </div>
     <div class="cform">
       <div class="frow">
-        <div class="fg"><label class="fl">First Name</label><input class="fi" type="text" placeholder="Jane"/></div>
-        <div class="fg"><label class="fl">Last Name</label><input class="fi" type="text" placeholder="Doe"/></div>
+        <div class="fg"><label class="fl">First Name</label><input class="fi" type="text" placeholder="Jane"></div>
+        <div class="fg"><label class="fl">Last Name</label><input class="fi" type="text" placeholder="Doe"></div>
       </div>
-      <div class="fg"><label class="fl">Email Address</label><input class="fi" type="email" placeholder="jane@example.com"/></div>
-      <div class="fg"><label class="fl">Service Needed</label><select class="fi" style="cursor:pointer"><option>Website &amp; Course Creation</option><option>Bookkeeping</option><option>Social Media Management</option><option>Multiple / Unsure</option></select></div>
-      <div class="fg"><label class="fl">Tell Me About Your Project</label><textarea class="fi" placeholder="What do you need help with? What's your timeline?"></textarea></div>
-      <button class="sbtn">Send Message &#8594;</button>
+      <div class="fg"><label class="fl">Email Address</label><input class="fi" type="email" placeholder="jane@example.com"></div>
+      <div class="fg"><label class="fl">Service Needed</label><select class="fi" style="cursor:pointer"><option value="" disabled="" selected="" id="firstoption">Select a service...</option><option>Website and Course Creation</option><option>Bookkeeping</option><option>Social Media Management</option><option>Multiple Services or Package Inquiry</option><option>Custom Package</option></select></div>
+      <div class="fg"><label class="fl">Tell Me About Your Project</label><textarea class="fi" placeholder="What do you need help with? What is your timeline and budget?"></textarea></div>
+      <button class="sbtn">Send Message →</button>
     </div>
   </div>
 </section>
 
 <footer>
-  <div class="flogo">Your<span>Name</span></div>
-  <p>&#169; 2025 [Your Name] · Virtual Assistant · Philippines</p>
+  <div class="flogo">Yang <span>Virtual Solutions</span></div>
+  <p>© 2025 Yang Montesa · Yang Virtual Solutions · Philippines</p>
   <div class="flinks">
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
+    <a href="#about">About</a><a href="#tools">Tools</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#process">Process</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a>
   </div>
 </footer>
 
 <div class="pal">
   <div class="pallbl">Brand Colors</div>
   <div class="palc">
-    <div class="psw" style="background:#2C6E6E" data-t="Primary 1 · #2C6E6E · Teal"></div>
-    <div class="psw" style="background:#D4863C" data-t="Primary 2 · #D4863C · Amber"></div>
-    <div class="psw" style="background:#F8F4EF;border:1px solid #ddd" data-t="Neutral 1 · #F8F4EF · Cream"></div>
-    <div class="psw" style="background:#252525" data-t="Neutral 2 · #252525 · Charcoal"></div>
+    <div class="psw" style="background:#2C6E6E" data-t="Primary · Deep Teal"></div>
+    <div class="psw" style="background:#D4863C" data-t="Primary · Warm Amber"></div>
+    <!--
+    <div class="psw" style="background:#E07035" data-t="Accent · Orange"></div>
+    <div class="psw" style="background:#22c55e" data-t="Accent · Green"></div>   
+    -->
+    <div class="psw" style="background:#F8F4EF;border:1px solid #ddd" data-t="Neutral · Cream"></div>
+    <div class="psw" style="background:#252525" data-t="Neutral · Charcoal"></div>
   </div>
 </div>
 
-<script src="js/main.js"></script>
-</body>
-</html>
+
+
+<!-- ══ EXPORT ZIP BUTTON ══ -->
+<button id="exportZipBtn" onclick="exportZip()" title="Download portfolio as ZIP" style="position: fixed; bottom: 1.4rem; left: 1.4rem; z-index: 9999; background: rgb(212, 134, 60); color: rgb(255, 255, 255); border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; border-radius: 50px; padding: 0.55rem 1.15rem; font-family: Inter, sans-serif; font-size: 0.78rem; font-weight: 600; cursor: pointer; box-shadow: rgba(44, 110, 110, 0.35) 0px 4px 16px; display: flex; align-items: center; gap: 0.45rem; transition: background 0.2s, transform 0.15s;" onmouseover="this.style.background='#D4863C'" onmouseout="this.style.background='#2C6E6E'" disabled="">⏳ Preparing…</button>
+
+
+
+
+  <script src="scripts.js"></script>
+</body></html>
