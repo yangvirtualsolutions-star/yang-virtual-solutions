@@ -1,9 +1,24 @@
 /* ── Niche toggle ── */
 function tog(id,pill){
   var sec=document.getElementById('sec-'+id);
-  var on=pill.classList.contains('on');
-  if(on){pill.classList.remove('on');sec.classList.add('hidden');}
-  else{pill.classList.add('on');sec.classList.remove('hidden');}
+  var wasOn=pill.classList.contains('on');
+
+  // Close all other sections/pills first (accordion behavior)
+  document.querySelectorAll('.pill').forEach(function(p){
+    if(p!==pill){ p.classList.remove('on'); }
+  });
+  document.querySelectorAll('.psec').forEach(function(s){
+    if(s!==sec){ s.classList.add('hidden'); }
+  });
+
+  // Toggle the clicked one
+  if(wasOn){
+    pill.classList.remove('on');
+    sec.classList.add('hidden');
+  } else {
+    pill.classList.add('on');
+    sec.classList.remove('hidden');
+  }
 }
 
 /* ── Smooth scroll ── */
@@ -16,27 +31,6 @@ document.querySelectorAll('a[href^="#"]').forEach(function(a){
 });
 
 /* ── Load profile photo ── */
-async function loadPhoto(){
-  var names=['Image 1.jpeg','Image 1.jpg','Image1.jpg','image1.jpg','image_1.jpg','yang.jpg','yang_montesa.jpg','photo.jpg','headshot.jpg','profile.jpg'];
-  for(var n of names){
-    try{
-      var data=await window.fs.readFile(n);
-      var bytes=new Uint8Array(data);
-      var binary='';
-      for(var i=0;i<bytes.length;i++){binary+=String.fromCharCode(bytes[i]);}
-      var b64=btoa(binary);
-      var src='data:image/jpeg;base64,'+b64;
-      // About section photo
-      var ap=document.getElementById('aboutPhoto');
-      if(ap){ap.src=src;ap.style.display='block';document.getElementById('aboutPlaceholder').style.display='none';}
-      // Hero graphic avatar
-      var hg=document.getElementById('hgPhoto');
-      if(hg){hg.src=src;hg.style.display='block';document.getElementById('hgInitials').style.display='none';}
-      return;
-    }catch(e){}
-  }
-}
-loadPhoto();
 
 /* ── Testimonial carousel ── */
 var car=document.getElementById('tcarousel');
@@ -66,3 +60,27 @@ var isDragging=false,startX,scrollStart;
 car.addEventListener('mousedown',function(e){isDragging=true;startX=e.pageX;scrollStart=car.scrollLeft;car.style.cursor='grabbing';});
 document.addEventListener('mouseup',function(){isDragging=false;car.style.cursor='';});
 document.addEventListener('mousemove',function(e){if(!isDragging)return;car.scrollLeft=scrollStart-(e.pageX-startX);});
+
+/* ── Service tabs: Course/Website Launch vs GoHighLevel ── */
+function svcTab(id, btn) {
+  document.querySelectorAll('.svc-tab-btn').forEach(function(b){ b.classList.remove('active'); });
+  document.querySelectorAll('.svc-panel').forEach(function(p){ p.classList.remove('active'); });
+  document.querySelectorAll('.automate-panel').forEach(function(p){ p.classList.remove('active'); });
+  btn.classList.add('active');
+  var panel = document.getElementById('panel-' + id);
+  if (panel) panel.classList.add('active');
+  if (id !== 'side') {
+    var automate = document.getElementById('automate-' + id);
+    if (automate) automate.classList.add('active');
+  }
+  if (window.lucide) { lucide.createIcons(); }
+}
+
+/* ── Pricing category switcher: Course & Website / GHL / Side Niche ── */
+function priceTab(id, btn) {
+  document.querySelectorAll('.pricing-tab-btn').forEach(function(b){ b.classList.remove('active'); });
+  document.querySelectorAll('.pricing-panel').forEach(function(p){ p.classList.remove('active'); });
+  btn.classList.add('active');
+  var panel = document.getElementById('pricing-panel-' + id);
+  if (panel) panel.classList.add('active');
+}
