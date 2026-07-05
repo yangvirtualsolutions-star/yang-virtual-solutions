@@ -406,8 +406,8 @@ footer p{font-size:.79rem}
 .svc-tab-btn.active .svc-tab-text strong{color:white}
 .svc-tab-btn.active .svc-tab-text small{color:rgba(255,255,255,.7)}
 
-.svc-panel{display:none;opacity:0;transform:translateY(8px);transition:opacity .35s ease,transform .35s ease}
-.svc-panel.active{display:block;opacity:1;transform:translateY(0)}
+.svc-panel{display:none}
+.svc-panel.active{display:block}
 .automate-panel{display:none;opacity:0;transform:translateY(8px);transition:opacity .35s ease,transform .35s ease}
 .automate-panel.active{display:block;opacity:1;transform:translateY(0)}
 .svc-panel-intro{font-size:.92rem;color:var(--muted);max-width:680px;margin-bottom:1.8rem;line-height:1.75;text-align:justify}
@@ -460,4 +460,140 @@ footer p{font-size:.79rem}
   .ghl-pkg-stack{grid-template-columns:1fr}
   .ghl-pkg-stack .pkg:nth-child(3){grid-column:1;max-width:100%}
   .ghl-pkg-stack .pkg li{white-space:normal;flex-wrap:wrap}
+}
+
+/* ══════════════════════════════════════════
+   LAUNCH ANIMATIONS
+   All animations run ONCE on page load or
+   first viewport entry. prefers-reduced-motion
+   respected throughout.
+   ══════════════════════════════════════════ */
+
+/* ── Keyframes ── */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(18px)}
+  to{opacity:1;transform:translateY(0)}
+}
+@keyframes fadeUpBadge{
+  from{opacity:0;transform:translateX(-50%) translateY(14px)}
+  to{opacity:1;transform:translateX(-50%) translateY(0)}
+}
+@keyframes fadeIn{
+  from{opacity:0}
+  to{opacity:1}
+}
+@keyframes scaleIn{
+  from{opacity:0;transform:scale(.94)}
+  to{opacity:1;transform:scale(1)}
+}
+@keyframes fadeLeft{
+  from{opacity:0;transform:translateX(-14px)}
+  to{opacity:1;transform:translateX(0)}
+}
+@keyframes fadeRight{
+  from{opacity:0;transform:translateX(14px)}
+  to{opacity:1;transform:translateX(0)}
+}
+
+/* ── Shared base state for animate-once targets ──
+   Elements start invisible; class .anim-visible
+   is added by the IntersectionObserver or by
+   the hero init function.                       */
+.anim-hero,
+.anim-hero-graphic,
+.anim-once{
+  opacity:0;
+}
+
+/* ── Hero left-side sequence ── */
+.anim-hero.anim-visible{
+  animation:fadeUp .65s ease both;
+}
+/* stagger via inline --d custom property set in JS */
+.anim-hero.anim-visible{
+  animation-delay:var(--d,0ms);
+}
+
+/* ── Hero graphic cards ── */
+.anim-hero-graphic.anim-visible{
+  animation:fadeUp .6s ease both;
+  animation-delay:var(--d,0ms);
+}
+
+/* ── Feature cards (hero) ── */
+.hf-card{
+  opacity:0;
+  animation:none;
+}
+.hf-card.anim-visible{
+  animation:fadeUp .55s ease both;
+  animation-delay:var(--d,0ms);
+}
+
+/* ── Viewport-triggered once animations ── */
+.anim-once.anim-visible{
+  animation:fadeUp .6s ease both;
+  animation-delay:var(--d,0ms);
+}
+
+/* ── prefers-reduced-motion: skip all ── */
+@media (prefers-reduced-motion:reduce){
+  .anim-hero,
+  .anim-hero-graphic,
+  .hf-card,
+  .anim-once,
+  .svc-cat-anim,
+  .svc-panel-reveal{
+    opacity:1 !important;
+    animation:none !important;
+    transition:none !important;
+  }
+}
+
+/* ── Service category card tab-switch animation ── */
+@keyframes svcCatIn{
+  from{opacity:0;transform:translateY(14px)}
+  to{opacity:1;transform:translateY(0)}
+}
+/* svc-cat animation is set inline via JS for reliable restart */
+.svc-cat-anim{}
+
+/* ── About Me: image + body reveal on first viewport entry ── */
+.anim-about-img{
+  opacity:0;
+  transform:translateX(28px);
+  transition:opacity .6s ease, transform .6s ease;
+}
+.anim-about-img.anim-visible{
+  opacity:1;
+  transform:translateX(0);
+}
+.anim-about-body{
+  opacity:0;
+  transform:translateY(20px);
+  filter:blur(3px);
+  transition:opacity .55s ease, transform .55s ease, filter .55s ease;
+}
+.anim-about-body.anim-visible{
+  opacity:1;
+  transform:translateY(0);
+  filter:blur(0);
+}
+@media (prefers-reduced-motion:reduce){
+  .anim-about-img,
+  .anim-about-body{
+    opacity:1 !important;
+    transform:none !important;
+    filter:none !important;
+    transition:none !important;
+  }
+}
+
+/* ── Service panel grid reveal (fires once on scroll + on every tab switch) ── */
+@keyframes svcPanelIn{
+  from{opacity:0;transform:translateY(16px)}
+  to{opacity:1;transform:translateY(0)}
+}
+.svc-panel-reveal{
+  animation:svcPanelIn .45s ease both;
 }
