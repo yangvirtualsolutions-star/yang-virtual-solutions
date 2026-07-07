@@ -597,3 +597,161 @@ footer p{font-size:.79rem}
 .svc-panel-reveal{
   animation:svcPanelIn .45s ease both;
 }
+
+/* ── Availability status badge (controlled via availability-config.js) ── */
+.avail-status-badge{display:none}
+.avail-status-badge--visible{display:inline-flex;align-items:center;gap:.4rem;background:var(--p2l);border:1px solid rgba(212,134,60,.3);padding:.3rem .8rem;border-radius:50px;font-size:.73rem;font-weight:600;color:var(--p2);margin-top:.6rem}
+.avail-status-badge--visible::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--p2);flex-shrink:0}
+.avail-status-badge--booked{background:#fee2e2;border-color:rgba(220,38,38,.25);color:#dc2626}
+.avail-status-badge--booked::before{background:#dc2626}
+
+/* ── Also Available pills: entrance + gentle float ── */
+@keyframes pillIn{
+  from{opacity:0;transform:translateY(12px) scale(.9)}
+  to{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes pillFloat{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-3px)}
+}
+.addl-tag.pill-enter{
+  opacity:0;
+}
+.addl-tag.pill-enter-active{
+  animation:pillIn .45s cubic-bezier(.34,1.56,.64,1) both;
+}
+.addl-tag.pill-float{
+  animation:pillFloat 5s ease-in-out infinite;
+}
+@media (prefers-reduced-motion:reduce){
+  .addl-tag.pill-enter,
+  .addl-tag.pill-enter-active,
+  .addl-tag.pill-float{
+    opacity:1 !important;
+    animation:none !important;
+    transform:none !important;
+  }
+}
+
+/* ── Course & Website pricing cards: clean title + desc list layout ── */
+#pricing-panel-course .pkg li{
+  flex-direction:column;
+  gap:.18rem;
+  align-items:flex-start;
+}
+#pricing-panel-course .pkg li span:first-of-type{
+  font-weight:600;
+  color:var(--n2);
+  line-height:1.4;
+  white-space:normal;
+}
+#pricing-panel-course .pkg.feat li span:first-of-type{
+  color:white;
+}
+/* pkg-li-desc overrides the generic .pkg li span bold via higher specificity */
+#pricing-panel-course .pkg li span.pkg-li-desc{
+  font-weight:400;
+  font-size:.81rem;
+  color:var(--muted);
+  line-height:1.55;
+  display:block;
+}
+.pkg-li-desc{
+  font-weight:400;
+  font-size:.81rem;
+  color:var(--muted);
+  line-height:1.55;
+  display:block;
+}
+#pricing-panel-course .pkg.feat .pkg-li-desc{
+  color:rgba(255,255,255,.82);
+}
+
+/* ── Pricing horizontal scroll carousels ── */
+.pricing-scroll-wrap{position:relative;max-width:1260px;margin-left:auto;margin-right:auto}
+.pricing-scroll-row{
+  display:flex;
+  flex-direction:row;
+  gap:1rem;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  scroll-behavior:smooth;
+  padding-bottom:1rem;
+  scrollbar-width:none;
+  -ms-overflow-style:none;
+  cursor:grab;
+}
+.pricing-scroll-row:active{cursor:grabbing;}
+.pricing-scroll-row::-webkit-scrollbar{display:none}
+.pricing-scroll-row .pkg{
+  flex:0 0 300px;
+  scroll-snap-align:start;
+  min-width:300px;
+}
+.pricing-scroll-arrows{
+  display:flex;
+  justify-content:flex-end;
+  gap:.6rem;
+  margin-bottom:.9rem;
+}
+.pricing-arrow{
+  width:38px;height:38px;border-radius:50%;
+  border:1px solid var(--border);
+  background:var(--white);
+  cursor:pointer;
+  font-size:1.1rem;
+  display:flex;align-items:center;justify-content:center;
+  color:var(--n2);
+  transition:all .2s;
+  padding:0;
+  font-family:'Inter',sans-serif;
+  line-height:1;
+  flex-shrink:0;
+}
+.pricing-arrow:hover{background:var(--p1);color:white;border-color:var(--p1)}
+.pricing-arrow:disabled{opacity:.3;cursor:default}
+
+/* GHL scroll row — centered 3-card row */
+#pricing-panel-ghl .pricing-scroll-row{
+  justify-content:center;
+  flex-wrap:nowrap;
+}
+#pricing-panel-ghl .pricing-scroll-row .pkg{
+  min-height:unset;
+  flex:0 0 420px;
+  min-width:420px;
+}
+#pricing-panel-ghl .pricing-scroll-wrap{
+  max-width:1300px;
+}
+
+@media(max-width:700px){
+  .pricing-scroll-row .pkg{flex:0 0 280px;min-width:280px}
+}
+
+/* ── GHL pricing cards: clean title + desc list layout ── */
+#pricing-panel-ghl .pkg li{
+  flex-direction:column;
+  gap:.18rem;
+  align-items:flex-start;
+}
+#pricing-panel-ghl .pkg li span:first-of-type{
+  font-weight:600;
+  color:var(--n2);
+  line-height:1.4;
+  white-space:normal;
+}
+#pricing-panel-ghl .pkg.feat li span:first-of-type{
+  color:white;
+}
+#pricing-panel-ghl .pkg li span.pkg-li-desc{
+  font-weight:400;
+  font-size:.81rem;
+  color:var(--muted);
+  line-height:1.55;
+  display:block;
+  white-space:normal;
+}
+#pricing-panel-ghl .pkg.feat .pkg-li-desc{
+  color:rgba(255,255,255,.82);
+}

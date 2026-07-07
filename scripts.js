@@ -242,3 +242,70 @@ function priceTab(id, btn) {
   }
 
 })();
+/* ── Also Available pills: entrance + gentle float ── */
+(function(){
+  if (window.matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+
+  var pills = document.querySelectorAll('.addl-tag');
+  if (!pills.length) return;
+
+  // Start all pills invisible
+  pills.forEach(function(pill){ pill.classList.add('pill-enter'); });
+
+  var fired = false;
+  var pillObserver = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (!entry.isIntersecting || fired) return;
+      fired = true;
+      pillObserver.disconnect();
+
+      pills.forEach(function(pill, i){
+        var delay = i * 55; // 55ms cascade between pills
+        setTimeout(function(){
+          pill.classList.add('pill-enter-active');
+          pill.style.animationDelay = delay + 'ms';
+
+          // After entrance finishes, switch to float
+          var entranceDuration = 450 + delay;
+          setTimeout(function(){
+            pill.classList.remove('pill-enter', 'pill-enter-active');
+            pill.style.animationDelay = '';
+            // Stagger float so pills form a gentle wave
+            pill.style.animationDelay = (i * 400) + 'ms';
+            pill.classList.add('pill-float');
+          }, entranceDuration + 50);
+        }, delay);
+      });
+    });
+  }, {threshold: 0.3});
+
+  pillObserver.observe(document.querySelector('.addl'));
+})();
+
+/* ── Pricing horizontal scroll arrows ── */
+function scrollPricing(id, dir) {
+  var row = document.getElementById(id + '-scroll-row');
+  if (!row) return;
+  var cardWidth = row.querySelector('.pkg') ? row.querySelector('.pkg').offsetWidth + 22 : 360;
+  row.scrollBy({left: dir * cardWidth, behavior: 'smooth'});
+}
+
+// Update arrow disabled states on scroll
+['course','ghl'].forEach(function(id) {
+  var row = document.getElementById(id + '-scroll-row');
+  if (!row) return;
+  var prev = document.getElementById(id + '-prev');
+  var next = document.getElementById(id + '-next');
+  function update() {
+    if (prev) prev.disabled = row.scrollLeft <= 4;
+    if (next) next.disabled = row.scrollLeft + row.clientWidth >= row.scrollWidth - 4;
+  }
+  row.addEventListener('scroll', update);
+  // Init
+  setTimeout(update, 100);
+  // Drag support
+  var isDown = false, startX, scrollStart;
+  row.addEventListener('mousedown', function(e){ isDown=true; startX=e.pageX; scrollStart=row.scrollLeft; row.style.cursor='grabbing'; });
+  document.addEventListener('mouseup', function(){ isDown=false; row.style.cursor=''; });
+  document.addEventListener('mousemove', function(e){ if(!isDown) return; row.scrollLeft = scrollStart - (e.pageX - startX); });
+});
